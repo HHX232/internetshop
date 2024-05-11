@@ -1,0 +1,50 @@
+.bitrix__products {
+   margin-bottom: 100px;
+}
+
+.bitrix__products-title {
+   font-weight: 800;
+   font-size: 40px;
+   margin-bottom: 40px;
+}
+.bitrix__shop-list {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+   row-gap: 30px;
+   column-gap: 30px;
+}
+.shop__list-item {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+
+}
+.shop__item-img {
+   margin-bottom: 10px;
+   aspect-ratio: 1/1;
+   max-width: 261px;
+}
+.shop__item-title {
+   font-size: 17px;
+   font-weight: 800;
+   margin-bottom: 10px;
+}
+.shop__item-text {
+   font-size: 14px;
+   color: #666;
+   margin-bottom: 10px;
+   max-width: 225px;
+}
+.shop__item-link {
+   font-size: 14px;
+   color: $accent;
+   
+}
+
+@media(max-width:735px){
+   .shop__item-img {
+
+      max-width: 201px;
+   }
+}

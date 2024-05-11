@@ -1,0 +1,300 @@
+.header__portfolio {
+
+   & .container{
+      max-width: 1220px;
+      padding: 0 10px;
+   }
+}
+.container__portfolio-bread{
+   max-width: 1220px;
+      padding: 0 10px;
+}
+
+.portfolio__title {
+   text-transform: uppercase;
+   font-weight: 800;
+   font-size: 45px;
+   margin-bottom: 40px;
+   color: #282828;
+}
+.portfolio__text {
+   font-size: 21px;
+   font-weight: 600;
+   max-width: 70%;
+   margin-bottom: 80px;
+   color: #282828;
+}
+.portfolio__filters {
+   max-width: 85%;
+   margin-bottom: 90px;
+   display: flex;
+   column-gap: 60px;
+   row-gap: 20px;
+   flex-wrap: wrap;
+}
+.portfolio__filters-item {
+   font-size: 22px;
+   color: $accent;
+   cursor: pointer;
+}
+.portfolio__filters-item--active {
+   font-weight: 600;
+}
+
+
+.portfolio__inner {
+}
+.portfolio__list {
+   display: flex;
+   flex-direction: column;
+}
+
+.portfolio__list-item .container{
+   max-width: 1220px;
+   padding: 140px 10px 130px 10px;
+   display: flex;
+   gap: 30px;
+}
+.portfolio__item-gray {
+   background-color: #F5F5F5;
+   
+}
+.portfolio__item-white{
+   position: relative;
+   &--decor{
+      position: relative;
+      &::before{
+         position: absolute;
+         content: url(/img/portfolio/white-ball-decor.svg);
+         bottom: -50%;
+         left: 0%;
+      }
+   }
+   
+}
+.portfolio__item-purple{
+   background-color: #894083;
+   color: #fff;
+   &--decor{
+      position: relative;
+      &::before{
+         position: absolute;
+         content: url(/img/portfolio/purple-basket-decor.svg);
+         top: 0;
+         right: 2%;
+      }
+   }
+
+
+& .portfolio__item-link{
+   z-index: 4;
+}
+ & .portfolio__item-subtitle{
+   z-index: 4;
+   color: #fff;
+ }
+ & .portfolio__item-title{
+   z-index: 4;
+
+   color: #fff;
+ }
+ & .portfolio__item-hashtags{
+   z-index: 4;
+
+   color: #fff;
+& .portfolio__item-text{
+   z-index: 4;
+
+   color: #fff !important;
+}
+ }
+}
+.portfolio__item-black--decor .container{
+   position: relative;
+}
+.portfolio__item-gradient--decor .container{
+   position: relative;
+}
+.portfolio__item-purple .container{
+   position: relative;
+}
+.diploma-box {
+   position: absolute;
+   content: "";
+   right: 2%;
+
+   top: 5%;
+   display: flex;
+
+
+}
+.diploma__text {
+   text-align: end;
+   font-size: 10px;
+   margin-right: 10px;
+}
+.diploma__img {
+   width: 147px;
+   height: 205px;
+}
+
+.portfolio__item-gradient{
+   position: relative;
+   background: linear-gradient(90.00deg, rgb(137, 64, 131) 0.09%,rgb(246, 135, 31) 100%);
+   color: #fff;
+   &--decor{
+      position: relative;
+     
+      &::before{
+         position: absolute;
+         opacity: .1;
+         content: url(/img/portfolio/gradient-decor.png);
+         top: 4%;
+         left: 5%;
+         z-index: 0;
+      }
+   }
+  
+& .portfolio__item-link{
+   z-index: 4;
+}
+ & .portfolio__item-subtitle{
+   z-index: 4;
+   color: #fff;
+ }
+ & .portfolio__item-title{
+   z-index: 4;
+
+   color: #fff;
+ }
+ & .portfolio__item-hashtags{
+   z-index: 4;
+
+   color: #fff;
+& .portfolio__item-text{
+   z-index: 4;
+
+   color: #fff !important;
+}
+ }
+}
+
+
+.portfolio__item-black{
+   position: relative;
+   color: #fff !important;
+   background-color: #000;
+   &--decor{
+      position: relative;
+      &::before{
+         position: absolute;
+         content: url(/img/portfolio/bacl-basket-decor.svg);
+         top: 4%;
+      }
+   }
+   
+
+
+ & .portfolio__item-subtitle{
+   color: #fff;
+ }
+ & .portfolio__item-title{
+   color: #fff;
+ }
+ & .portfolio__item-hashtags{
+   color: #fff;
+& .portfolio__item-text{
+   color: #fff !important;
+}
+ }
+}
+
+.portfolio__item-white{
+   background-color: #fff;
+   & .portfolio__item-link{
+      background-color: #DADADA;
+   }
+}
+.portfolio__item-text {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 15px;
+ 
+}
+.portfolio__item-subtitle {
+   color: #282828;
+     font-size: 14px;
+   font-weight: 600;
+   margin-bottom: 4px;
+}
+.portfolio__item-title {
+   font-size: 23px;
+   color: $accent;
+   text-transform: uppercase;
+   margin-bottom: 15px;
+   font-weight: 800;
+}
+.portfolio__item-hashtags {
+   max-width: 275px;
+   display: flex;
+   flex-wrap: wrap;
+   column-gap: 17px;
+   row-gap: 6px;
+   font-size: 13px;
+   color: #666;
+   margin-bottom: 35px;
+}
+
+.portfolio__item-link {
+   background-color: #fff;
+   color: #7A4281;
+   padding: 5px 13px;
+   display: flex;
+   width: fit-content;
+   align-items: center;
+   justify-content: center;
+   font-size: 14px;
+   border-radius: 50px;
+}
+
+.portfolio__item-img {
+   aspect-ratio: 2/1;
+   width: 60vw;
+   max-width: 876px;
+   min-width: 590px;
+}
+@media(max-width:900px){
+   .portfolio__list-item .container{
+      flex-direction: column;
+      align-items: center;
+   }
+   .portfolio__item-text{
+      max-width: 60%;
+   }
+   .portfolio__item-img{
+      min-width: 390px;
+   }
+}
+
+
+@media(max-width:600px){
+   .portfolio__item-text{
+      max-width: 95%;
+   }
+   .portfolio__item-gradient--decor::before{
+      display: none;
+   }
+   .diploma-box{
+      display: none;
+   }
+   .portfolio__item-white--decor::before{
+      display: none;
+   }
+   .portfolio__item-img{
+      min-width: 300px;
+   }
+   .portfolio__list-item .container{
+      padding: 80px 10px 50px 10px;
+   }
+
+}

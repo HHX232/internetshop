@@ -1,0 +1,33 @@
+
+.header__services-inner {
+   padding-top: 30px;
+   display: flex;
+   flex-direction: column;
+}
+.header__services-bread {
+   display: flex;
+   gap: 8px;
+   align-items: center;
+   margin-bottom: 70px;
+}
+.header__bread-item {
+   display: flex;
+   color: #666;
+   align-items: center;
+   &--active{
+      color: #FF8600;
+   }
+}
+.header__services-title {
+   font-size: 44px;
+   font-weight: 800;
+   margin-bottom: 40px;
+   text-transform: uppercase;
+}
+.header__services-text {
+   margin-bottom: 80px;
+   font-size: 20px;
+   font-weight: 600;
+
+
+}

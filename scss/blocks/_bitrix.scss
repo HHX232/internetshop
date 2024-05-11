@@ -1,0 +1,77 @@
+.bitrix {
+   margin-bottom: 100px;
+   margin-top: 80px;
+}
+
+.bitrix__title {
+   font-size: 33.75px;
+font-weight: 800;
+line-height: 53px;
+letter-spacing: 0.72px;
+text-transform: uppercase;
+margin-bottom: 28px;
+}
+.bitrix__inner {
+   display: flex;
+   justify-content: space-between;
+   gap: 20px;
+}
+.bitrix__text-content {
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+   max-width: 40%;
+}
+.bitrix__text {
+   color: #666;
+   font-size: 16px;
+   letter-spacing: .3px;
+}
+.bitrix__text-title {
+   font-weight: 600;
+   font-size: 23px;
+   color: $accent;
+}
+.bitrix__img {
+   max-width: 700px;
+   max-height: 500px;
+
+}
+
+
+.about__trust-bg{
+   height: 75%;
+}
+.trust__slider{
+   margin-bottom: 0;
+}
+
+@media(max-width:1300px){
+   .bitrix__img{
+      max-width: 500px;
+      max-height: 300px;
+   }
+   .bitrix__text-content {
+   max-width: 50%;
+   }
+   .bitrix__inner{
+      align-items: center;
+   }
+}
+@media(max-width:890px){
+   .bitrix__inner{
+     flex-direction: column;
+   }
+   .bitrix__text-content {
+      max-width: 75%;
+      }
+      .bitrix__title{
+         font-size: 26px;
+      }
+}
+@media(max-width:500px){
+   .bitrix__img{
+      max-width: 400px;
+      max-height: 200px;
+   }
+}

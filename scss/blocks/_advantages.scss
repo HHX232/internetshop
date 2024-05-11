@@ -1,0 +1,128 @@
+.advantages{
+   margin-bottom: 25px;
+}
+.advantages__box {
+   display: flex;
+   flex-direction: column;
+
+}
+.advantages__list {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   &:first-child{
+      border-bottom: 1px solid #E3E3E3;
+   }
+   &:last-child{
+      margin-bottom: 21px;
+   }
+}
+.advantages__list-item {
+   padding: 25px;
+   display: flex;
+   flex-direction: column;
+   border-right: 1px solid #E3E3E3;
+   &:last-child{
+      border: none;
+   }
+
+}
+.advantages__item-icon {
+   margin-bottom: 32px;
+   width: 50px;
+   height: 50px;
+}
+.advantages__item-title {
+   background: linear-gradient(90.00deg, rgb(122, 66, 129),rgb(228, 128, 35));
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+font-size: 24px;
+letter-spacing: 2.5px;
+   margin-bottom: 10px;
+}
+.advantages__item-text {
+   font-size: 8px;
+   color: $accent;
+   margin-bottom: 33%;
+}
+
+.advantages__market {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   grid-row: 210px;
+   margin-top: 20px;
+}
+.advantages__market-item {
+   padding: 70px 30px;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   transition: all .3s;
+   border: 1px solid $white;
+   opacity: .7;
+   &:hover .advantages__market-arrow{
+      opacity: 1;
+      animation-name: arrow;
+      animation-duration: .6s;
+      animation-fill-mode: forwards;
+   }
+}
+.advantages__market-bitrix {
+   background: linear-gradient(99.82deg, rgb(244, 7, 82) 6.669%,rgb(255, 94, 37) 100.013%);
+}
+.advantages__market-img {
+   width: 55px;
+   height: 55px;
+}
+.advantages__market-text {
+   color: $white;
+   font-weight: 700;
+   font-size: 16px;
+
+}
+.advantages__market-arrow {
+   margin-left: 40px;
+   opacity: .6;
+   width: 12px;
+   height: 16px;
+}
+.advantages__market-24 {
+   background: linear-gradient(94.48deg, rgb(0, 97, 255) 9.335%,rgb(42, 181, 197) 100.007%);
+}
+.advantages__market-DB {
+   background: linear-gradient(90.00deg, rgb(255, 72, 14) 0%,rgb(240, 131, 30) 100%);
+}
+.advantages__market-seon {
+   background: linear-gradient(92.25deg, rgb(25, 80, 252) 7.99%,rgb(112, 70, 247) 100%,rgb(7, 200, 249) 100%);
+}
+
+@keyframes arrow{
+   0%{
+      transform: translateX(0px);
+   }
+   100%{
+      transform: translateX(15px);
+   }
+}
+
+@media(max-width:1050px){
+   .advantages__list-item{
+      border: 1px solid #E3E3E3;
+   }
+   .advantages__list-item:last-child{
+      border: 1px solid #E3E3E3;
+   }
+}
+
+@media(max-width:520px){
+   .advantages__item-text{
+      margin-bottom: 8%;
+   }
+   .advantages__list-item{
+      align-items: center;
+   }
+   .advantages__item-title{
+      text-align: center;
+   }
+}

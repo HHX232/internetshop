@@ -1,0 +1,149 @@
+
+// /* Phone Mask */
+// mask('[data-tel-input]');
+
+// // Удаляем '+' если больше ничего не введено, чтобы показать placeholder
+// const phoneInputs = document.querySelectorAll('[data-tel-input]');
+// phoneInputs.forEach((input)=>{
+// 	input.addEventListener('input', ()=>{
+// 		if (input.value == '+') input.value = '';
+// 	})
+// 	input.addEventListener('blur', ()=>{
+// 		if (input.value == '+') input.value = '';
+// 	})
+// });
+
+let swiper = new Swiper(".trust__comm-first", {
+	navigation: {
+	  nextEl: ".swiper-button-next",
+	  prevEl: ".swiper-button-prev",
+	},
+ });
+
+ $(document).ready(function(){
+	$('.trust__slider').slick();
+ })
+ document.getElementById('file').addEventListener('change', function () {
+	var files = this.files;
+	if (files.length > 0) {
+		 var label = document.querySelector('.file__label');
+		 if (files.length === 1) {
+			  label.textContent = files[0].name;
+		 } else {
+			  label.textContent = files.length + " файлов прикреплено";
+		 }
+	}
+});
+
+
+
+
+const timerElement = document.getElementById('timer');
+const endValue = 1.83;
+
+
+function isElementInViewport(el, offset) {
+	var rect = el.getBoundingClientRect();
+	return (
+	  rect.top >= +offset &&
+	  rect.left >= +offset &&
+	  rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) - offset &&
+	  rect.right <= (window.innerWidth || document.documentElement.clientWidth) - offset
+	);
+ }
+
+ // Функция для запуска анимации при достижении элементом области видимости
+ function animateIfVisible() {
+	var timerElement = document.getElementById('timer');
+	if (isElementInViewport(timerElement, 200)) {
+	  // Здесь выполняйте вашу анимацию animateNumber()
+	  animateNumber();
+	  // Удаляем обработчик события, чтобы анимация запустилась только один раз
+	  window.removeEventListener('scroll', animateIfVisible);
+	}
+ }
+
+ // Функция анимации animateNumber()
+ function animateNumber() {
+	let wholeNumber = 0;
+  let decimal = 0;
+
+  const wholeNumberTimer = setInterval(() => {
+    wholeNumber++;
+    if (wholeNumber > Math.floor(endValue)) {
+      clearInterval(wholeNumberTimer);
+      wholeNumber = Math.floor(endValue);
+    }
+    timerElement.children[0].textContent = wholeNumber;
+  }, 500 / Math.floor(endValue));
+
+  const decimalTimer = setInterval(() => {
+    decimal++;
+    if (decimal > 83) {
+      clearInterval(decimalTimer);
+      decimal = 83;
+    }
+    timerElement.children[2].textContent = String(decimal).padStart(2, '0');
+    if (wholeNumber === Math.floor(endValue) && decimal === 83) {
+      clearInterval(wholeNumberTimer);
+      clearInterval(decimalTimer);
+    }
+  }, 500 / 84);
+	console.log('Animation started');
+ }
+
+ // Вызываем функцию при загрузке страницы и при прокрутке
+ window.addEventListener('scroll', animateIfVisible);
+ animateIfVisible();
+
+ //form
+
+
+ document.getElementById('applicationForm').addEventListener('submit', function(event) {
+  event.preventDefault(); // Предотвращаем отправку формы по умолчанию
+
+  // Создаем объект FormData для сбора данных формы
+  var formData = new FormData(this);
+
+  // Отправляем данные на сервер с помощью AJAX
+  var xhr = new XMLHttpRequest();
+  xhr.open('POST', 'обработчик.php', true);
+  xhr.onload = function() {
+      if (xhr.status === 200) {
+          alert('Форма успешно отправлена');
+          // Очищаем поля формы
+          document.getElementById('applicationForm').reset();
+      } else {
+          alert('Произошла ошибка при отправке формы');
+      }
+  };
+  xhr.send(formData);
+});
+
+
+
+ //tabs
+ const tabItem = document.querySelectorAll('.tabs__btns-item');
+ const tabContent = document.querySelectorAll('.tabs__content-item');
+
+ tabItem.forEach(function(element){
+	element.addEventListener('click', open);
+  })
+
+ function open(evt){
+  const tabtarget = evt.currentTarget;
+  console.log(tabtarget)
+  const button = tabtarget.dataset.tab;
+
+  tabItem.forEach(function(item){
+    item.classList.remove('tabs__btns-item-active');
+  });
+
+  tabtarget.classList.add('tabs__btns-item-active');
+
+  tabContent.forEach(function(item){
+item.classList.remove('tabs__content-item--active')
+  });
+
+  document.querySelector(`#${button}`).classList.add('tabs__content-item--active');
+ }
