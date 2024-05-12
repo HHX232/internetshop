@@ -28,12 +28,17 @@
              <a href="./main.html" class="header__link header__link-service">Услуги</a>
              <a href="./portfolio.html" class="header__link header__link-portfolio">Портфолио</a>
              <div class="burger__box">
-                 <div class="burger">
-                     <div class="burger__line"></div>
-                     <div class="burger__line"></div>
-                     <div class="burger__line"></div>
-                 </div>
-             </div>
+               <div class="burger__content">
+                   <button class="burger__close-btn">закрыть</button>
+                   <a href="#" class="burger__content-link">first link</a>
+                   <a href="#" class="burger__content-link">second link</a>
+               </div>
+               <div class="burger">
+                   <div class="burger__line"></div>
+                   <div class="burger__line"></div>
+                   <div class="burger__line"></div>
+               </div>
+           </div>
          </div>
      </div> 
      </nav>
@@ -104,7 +109,11 @@
                         <a href="#" class="portfolio__item-link">Смотреть кейс</a>
                        </div>
               <a class="portfolio__item-img--box">
-                        <img src="/img/portfolio/port-1.jpg" alt="" class="portfolio__item-img">
+               <picture>
+                  <source class="portfolio__item-img" srcset="/img/portfolio/port-1.avif" type="image/avif">
+                  <img class="portfolio__item-img" src="/img/portfolio/port-1-mini.jpg" alt="Описание изображения">
+                </picture>
+                        
                        </a>
                      </div>
                   </li>
@@ -130,7 +139,10 @@
                         <a href="#" class="portfolio__item-link">Смотреть кейс</a>
                        </div>
                        <a class="portfolio__item-img--box">
-                        <img src="/img/portfolio/port-2.jpg" alt="" class="portfolio__item-img">
+                        <picture>
+                           <source class="portfolio__item-img" srcset="/img/portfolio/port-2.avif" type="image/avif">
+                           <img class="portfolio__item-img" src="/img/portfolio/port-2-mini.jpg" alt="Описание изображения">
+                         </picture>
                        </a>
                      </div>
                   </li>
@@ -157,7 +169,10 @@
                         <a href="#" class="portfolio__item-link">Смотреть кейс</a>
                        </div>
                        <a class="portfolio__item-img--box">
-                        <img src="/img/portfolio/port-3.jpg" alt="" class="portfolio__item-img">
+                        <picture>
+                           <source class="portfolio__item-img" srcset="/img/portfolio/port-3.avif" type="image/avif">
+                           <img class="portfolio__item-img" src="/img/portfolio/port-3-mini.jpg" alt="Описание изображения">
+                         </picture>
                        </a>
                      </div>
                   </li>
@@ -183,7 +198,10 @@
                         <a href="#" class="portfolio__item-link">Смотреть кейс</a>
                        </div>
                        <a class="portfolio__item-img--box">
-                        <img src="/img/portfolio/port-4.jpg" alt="" class="portfolio__item-img">
+                        <picture>
+                           <source class="portfolio__item-img" srcset="/img/portfolio/port-4.avif" type="image/avif">
+                           <img class="portfolio__item-img" src="/img/portfolio/port-4-mini.jpg" alt="Описание изображения">
+                         </picture>
                        </a>
                      </div>
                   </li>
@@ -206,7 +224,10 @@
                         <a href="#" class="portfolio__item-link">Смотреть кейс</a>
                        </div>
                        <a class="portfolio__item-img--box">
-                        <img src="/img/portfolio/port-5.png" alt="" class="portfolio__item-img">
+                        <picture>
+                           <source class="portfolio__item-img" srcset="/img/portfolio/port-5.avif" type="image/avif">
+                           <img class="portfolio__item-img" src="/img/portfolio/port-5-mini.png" alt="Описание изображения">
+                         </picture>
                        </a>
                      </div>
                   </li>
@@ -228,7 +249,10 @@
                         <a href="#" class="portfolio__item-link">Смотреть кейс</a>
                        </div>
                        <a class="portfolio__item-img--box">
-                        <img src="/img/portfolio/port-6.jpg" alt="" class="portfolio__item-img">
+                        <picture>
+                           <source class="portfolio__item-img" srcset="/img/portfolio/port-6.avif" type="image/avif">
+                           <img class="portfolio__item-img" src="/img/portfolio/port-6-mini.jpg" alt="Описание изображения">
+                         </picture>
                        </a>
                      </div>
                   </li>
@@ -255,7 +279,10 @@
                         <a href="#" class="portfolio__item-link">Смотреть кейс</a>
                        </div>
                        <a class="portfolio__item-img--box">
-                        <img src="/img/portfolio/port-7.jpg" alt="" class="portfolio__item-img">
+                        <picture>
+                           <source class="portfolio__item-img" srcset="/img/portfolio/port-7.avif" type="image/avif">
+                           <img class="portfolio__item-img" src="/img/portfolio/port-7-mini.jpg" alt="Описание изображения">
+                         </picture>
                        </a>
                      </div>
                   </li>
@@ -265,9 +292,9 @@
                         <div class="portfolio__item-subtitle">Интернет-магазины / CRM Битрикс24 /
                            Дизайн и графика</div>
                         <div class="portfolio__item-title">Maunfeld</div>
-                        <p class="portfolio__item-text">Поддержка и развитие двух сайтов
+                        <p class="portfolio__item-text">Поддержка и развитие двух сайтов
                            бренда, разработка графики для страниц
-                           и кастмное внедрение Битрикс24</p>
+                           и кастмное внедрение Битрикс24</p>
                         <ul class="portfolio__item-hashtags">
                            <li class="portfolio__hashtags-item">#E-commerce</li>
                            <li class="portfolio__hashtags-item">#1С-Битрикс</li>
@@ -282,7 +309,10 @@
                         <a href="#" class="portfolio__item-link">Смотреть кейс</a>
                        </div>
                        <a class="portfolio__item-img--box">
-                        <img src="/img/portfolio/port-8.jpg" alt="" class="portfolio__item-img">
+                        <picture>
+                           <source class="portfolio__item-img" srcset="/img/portfolio/port-8.avif" type="image/avif">
+                           <img class="portfolio__item-img" src="/img/portfolio/port-8-mini.jpg" alt="Описание изображения">
+                         </picture>
                        </a>
                      </div>
                   </li>
@@ -308,7 +338,10 @@
                         <a href="#" class="portfolio__item-link">Смотреть кейс</a>
                        </div>
               <a class="portfolio__item-img--box">
-                        <img src="/img/portfolio/port-9.jpg" alt="" class="portfolio__item-img">
+               <picture>
+                  <source class="portfolio__item-img" srcset="/img/portfolio/port-9.avif" type="image/avif">
+                  <img class="portfolio__item-img" src="/img/portfolio/port-9-mini.jpg" alt="Описание изображения">
+                </picture>
                        </a>
                      </div>
                   </li>
@@ -319,7 +352,7 @@
                         <div class="portfolio__item-subtitle">Интернет-магазины</div>
                         <div class="portfolio__item-title">Markli</div>
                         <p class="portfolio__item-text">Интернет-магазин сувенирных подарков
-                           с нанесением для компании Маркли</p>
+                           с нанесением для компании Маркли</p>
                         <ul class="portfolio__item-hashtags">
                            <li class="portfolio__hashtags-item">#E-commerce</li>
                            <li class="portfolio__hashtags-item">#1С-Битрикс</li>
@@ -333,7 +366,10 @@
                         <a href="#" class="portfolio__item-link">Смотреть кейс</a>
                        </div>
                        <a class="portfolio__item-img--box">
-                        <img src="/img/portfolio/port-10.jpg" alt="" class="portfolio__item-img">
+                        <picture>
+                           <source class="portfolio__item-img" srcset="/img/portfolio/port-10.avif" type="image/avif">
+                           <img class="portfolio__item-img" src="/img/portfolio/port-10-mini.jpg" alt="Описание изображения">
+                         </picture>
                        </a>
                      </div>
                   </li>
@@ -353,7 +389,10 @@
                         <a href="#" class="portfolio__item-link">Смотреть кейс</a>
                        </div>
               <a class="portfolio__item-img--box">
-                        <img src="/img/portfolio/port-11.jpg" alt="" class="portfolio__item-img">
+               <picture>
+                  <source class="portfolio__item-img" srcset="/img/portfolio/port-11.avif" type="image/avif">
+                  <img class="portfolio__item-img" src="/img/portfolio/port-11-mini.jpg" alt="Описание изображения">
+                </picture>
                        </a>
                      </div>
                   </li>
@@ -374,7 +413,10 @@
                         <a href="#" class="portfolio__item-link">Смотреть кейс</a>
                        </div>
                        <a class="portfolio__item-img--box">
-                        <img src="/img/portfolio/port-12.jpg" alt="" class="portfolio__item-img">
+                        <picture>
+                           <source class="portfolio__item-img" srcset="/img/portfolio/port-12.avif" type="image/avif">
+                           <img class="portfolio__item-img" src="/img/portfolio/port-12-mini.jpg" alt="Описание изображения">
+                         </picture>
                        </a>
                      </div>
                   </li>
@@ -395,7 +437,10 @@
                         <a href="#" class="portfolio__item-link">Смотреть кейс</a>
                        </div>
               <a class="portfolio__item-img--box">
-                        <img src="/img/portfolio/port-13.jpg" alt="" class="portfolio__item-img">
+               <picture>
+                  <source class="portfolio__item-img" srcset="/img/portfolio/port-13.avif" type="image/avif">
+                  <img class="portfolio__item-img" src="/img/portfolio/port-13-mini.jpg" alt="Описание изображения">
+                </picture>
                        </a>
                      </div>
                   </li>
@@ -411,7 +456,7 @@
                         <div class="portfolio__item-subtitle">Интернет-магазины</div>
                         <div class="portfolio__item-title">Guide</div>
                         <p class="portfolio__item-text">Интернет-магазин бренда Guide
-                           на коробочном решении SEON</p>
+                           на коробочном решении SEON</p>
                         <ul class="portfolio__item-hashtags">
                            <li class="portfolio__hashtags-item">#E-commerce</li>
                            <li class="portfolio__hashtags-item">#SEON коробочное решение</li>
@@ -423,7 +468,10 @@
                         <a href="#" class="portfolio__item-link">Смотреть кейс</a>
                        </div>
               <a class="portfolio__item-img--box">
-                        <img src="/img/portfolio/port-14.png" alt="" class="portfolio__item-img">
+               <picture>
+                  <source class="portfolio__item-img" srcset="/img/portfolio/port-14.avif" type="image/avif">
+                  <img class="portfolio__item-img" src="/img/portfolio/port-14-mini.jpg" alt="Описание изображения">
+                </picture>
                        </a>
                      </div>
                   </li>
@@ -444,7 +492,10 @@
                         <a href="#" class="portfolio__item-link">Смотреть кейс</a>
                        </div>
               <a class="portfolio__item-img--box">
-                        <img src="/img/portfolio/port-15.jpg" alt="" class="portfolio__item-img">
+               <picture>
+                  <source class="portfolio__item-img" srcset="/img/portfolio/port-15.avif" type="image/avif">
+                  <img class="portfolio__item-img" src="/img/portfolio/port-15-mini.jpg" alt="Описание изображения">
+                </picture>
                        </a>
                      </div>
                   </li>
@@ -454,7 +505,7 @@
                         <div class="portfolio__item-subtitle">Интернет-магазины</div>
                         <div class="portfolio__item-title">Conotech</div>
                         <p class="portfolio__item-text">Интернет-магазин бренда Conotech
-                           на коробочном решении SEON</p>
+                           на коробочном решении SEON</p>
                         <ul class="portfolio__item-hashtags">
                            <li class="portfolio__hashtags-item">#E-commerce</li>
                            <li class="portfolio__hashtags-item">#SEON коробочное решение</li>
@@ -467,7 +518,10 @@
                         <a href="#" class="portfolio__item-link">Смотреть кейс</a>
                        </div>
               <a class="portfolio__item-img--box">
-                        <img src="/img/portfolio/port-16.jpg" alt="" class="portfolio__item-img">
+               <picture>
+                  <source class="portfolio__item-img" srcset="/img/portfolio/port-16.avif" type="image/avif">
+                  <img class="portfolio__item-img" src="/img/portfolio/port-16-mini.jpg" alt="Описание изображения">
+                </picture>
                        </a>
                      </div>
                   </li>
@@ -476,11 +530,11 @@
                         <div class="portfolio__item-text">
                         <div class="portfolio__item-subtitle">Порталы и сервисы</div>
                         <div class="portfolio__item-title">Service Azur</div>
-                        <p class="portfolio__item-text">Разработка платформы из 16 сайтов
-                           на английском, французском, русском
-                           и украинском языках с функцией
+                        <p class="portfolio__item-text">Разработка платформы из 16 сайтов
+                           на английском, французском, русском
+                           и украинском языках с функцией
                            автоматического перевода контента
-                           и выгрузкой каталогов из CRM</p>
+                           и выгрузкой каталогов из CRM</p>
                         <ul class="portfolio__item-hashtags">
                            <li class="portfolio__hashtags-item">#Недвижимость</li>
                            <li class="portfolio__hashtags-item">#1С-Битрикс</li>
@@ -493,7 +547,10 @@
                         <a href="#" class="portfolio__item-link">Смотреть кейс</a>
                        </div>
               <a class="portfolio__item-img--box">
-                        <img src="/img/portfolio/port-17.jpg" alt="" class="portfolio__item-img">
+               <picture>
+                  <source class="portfolio__item-img" srcset="/img/portfolio/port-17.avif" type="image/avif">
+                  <img class="portfolio__item-img" src="/img/portfolio/port-17-mini.jpg" alt="Описание изображения">
+                </picture>
                        </a>
                      </div>
                   </li>
@@ -508,7 +565,7 @@
                         <div class="portfolio__item-subtitle">Интернет-магазины</div>
                         <div class="portfolio__item-title">Перекресток</div>
                         <p class="portfolio__item-text">Интернет-магазин торговой сети,
-                           синхронизация с самописными системами
+                           синхронизация с самописными системами
                            учета, разработка модуля управления
                            зонами доставки</p>
                         <ul class="portfolio__item-hashtags">
@@ -523,7 +580,10 @@
                         <a href="#" class="portfolio__item-link">Смотреть кейс</a>
                        </div>
                        <a class="portfolio__item-img--box">
-                        <img src="/img/portfolio/port-18.jpg" alt="" class="portfolio__item-img">
+                        <picture>
+                           <source class="portfolio__item-img" srcset="/img/portfolio/port-18.avif" type="image/avif">
+                           <img class="portfolio__item-img" src="/img/portfolio/port-18-mini.jpg" alt="Описание изображения">
+                         </picture>
                        </a>
                      </div>
                   </li>
@@ -533,10 +593,10 @@
                         <div class="portfolio__item-subtitle">Корпоративные сайты / Креативные
                            проекты / Порталы и сервисы</div>
                         <div class="portfolio__item-title">LES Art Resort</div>
-                        <p class="portfolio__item-text">Корпоративный сайт отеля с модулем
+                        <p class="portfolio__item-text">Корпоративный сайт отеля с модулем
                            бронирования, синхронизацией сайта
-                           с системой бронирования Fidelio
-                           и Битрикс24</p>
+                           с системой бронирования Fidelio
+                           и Битрикс24</p>
                         <ul class="portfolio__item-hashtags">
                            <li class="portfolio__hashtags-item">#Сервис бронирования</li>
                            <li class="portfolio__hashtags-item">#1С-Битрикс</li>
@@ -548,7 +608,10 @@
                         <a href="#" class="portfolio__item-link">Смотреть кейс</a>
                        </div>
               <a class="portfolio__item-img--box">
-                        <img src="/img/portfolio/port-19.jpg" alt="" class="portfolio__item-img">
+               <picture>
+                  <source class="portfolio__item-img" srcset="/img/portfolio/port-19.avif" type="image/avif">
+                  <img class="portfolio__item-img" src="/img/portfolio/port-19-mini.jpg" alt="Описание изображения">
+                </picture>
                        </a>
                      </div>
                   </li>
@@ -557,8 +620,8 @@
                         <div class="portfolio__item-text">
                         <div class="portfolio__item-subtitle">Порталы и сервисы</div>
                         <div class="portfolio__item-title">Gazeta Service Azur</div>
-                        <p class="portfolio__item-text">Перенос СМИ с Wordpress на 1С-Битрикс
-                           и полная миграция контента со старого
+                        <p class="portfolio__item-text">Перенос СМИ с Wordpress на 1С-Битрикс
+                           и полная миграция контента со старого
                            сайта</p>
                         <ul class="portfolio__item-hashtags">
                            <li class="portfolio__hashtags-item">#СМИ</li>
@@ -570,7 +633,10 @@
                         <a href="#" class="portfolio__item-link">Смотреть кейс</a>
                        </div>
               <a class="portfolio__item-img--box">
-                        <img src="/img/portfolio/port-20.jpg" alt="" class="portfolio__item-img">
+               <picture>
+                  <source class="portfolio__item-img" srcset="/img/portfolio/port-20.avif" type="image/avif">
+                  <img class="portfolio__item-img" src="/img/portfolio/port-20-mini.jpg" alt="Описание изображения">
+                </picture>
                        </a>
                      </div>
                   </li>
@@ -580,8 +646,8 @@
                         <div class="portfolio__item-subtitle">Креативные проекты</div>
                         <div class="portfolio__item-title">LESные истории</div>
                         <p class="portfolio__item-text">Рекламная игра для LES Art Resort
-                           с модулем подачи заявки, голосования
-                           и логирования результатов для
+                           с модулем подачи заявки, голосования
+                           и логирования результатов для
                            мониторинга накруток</p>
                         <ul class="portfolio__item-hashtags">
                            <li class="portfolio__hashtags-item">#Рекламная игра</li>
@@ -593,7 +659,10 @@
                         <a href="#" class="portfolio__item-link">Смотреть кейс</a>
                        </div>
               <a class="portfolio__item-img--box">
-                        <img src="/img/portfolio/port-21.jpg" alt="" class="portfolio__item-img">
+               <picture>
+                  <source class="portfolio__item-img" srcset="/img/portfolio/port-21.avif" type="image/avif">
+                  <img class="portfolio__item-img" src="/img/portfolio/port-21-mini.jpg" alt="Описание изображения">
+                </picture>
                        </a>
                      </div>
                   </li>
@@ -617,7 +686,10 @@
                         <a href="#" class="portfolio__item-link">Смотреть кейс</a>
                        </div>
               <a class="portfolio__item-img--box">
-                        <img src="/img/portfolio/port-22.jpg" alt="" class="portfolio__item-img">
+               <picture>
+                  <source class="portfolio__item-img" srcset="/img/portfolio/port-22.avif" type="image/avif">
+                  <img class="portfolio__item-img" src="/img/portfolio/port-22-mini.jpg" alt="Описание изображения">
+                </picture>
                        </a>
                      </div>
                   </li>
@@ -638,7 +710,10 @@
                         <a href="#" class="portfolio__item-link">Смотреть кейс</a>
                        </div>
               <a class="portfolio__item-img--box">
-                        <img src="/img/portfolio/port-23.jpg" alt="" class="portfolio__item-img">
+               <picture>
+                  <source class="portfolio__item-img" srcset="/img/portfolio/port-23.avif" type="image/avif">
+                  <img class="portfolio__item-img" src="/img/portfolio/port-23-mini.jpg" alt="Описание изображения">
+                </picture>
                        </a>
                      </div>
                   </li>
@@ -650,7 +725,7 @@
                            Приложения и игры</div>
                         <div class="portfolio__item-title">Ink Football</div>
                         <p class="portfolio__item-text">Мобильная игра для лечения зрения для
-                           Android и iOS</p>
+                           Android иiOS</p>
                         <ul class="portfolio__item-hashtags">
                            <li class="portfolio__hashtags-item">#HTML5</li>
                            <li class="portfolio__hashtags-item">#Android</li>
@@ -663,8 +738,10 @@
                         <a href="#" class="portfolio__item-link">Смотреть кейс</a>
                        </div>
               <a class="portfolio__item-img--box">
-                        <img src="/img/portfolio/port-24.jpg" alt="" class="portfolio__item-img">
-                       </a>
+               <picture>
+                  <source class="portfolio__item-img" srcset="/img/portfolio/port-24.avif" type="image/avif">
+                  <img class="portfolio__item-img" src="/img/portfolio/port-24-mini.jpg" alt="Описание изображения">
+                </picture>                       </a>
                      </div>
                   </li>
                   <li class="portfolio__list-item portfolio__item-gray">
@@ -682,7 +759,10 @@
                         <a href="#" class="portfolio__item-link">Смотреть кейс</a>
                        </div>
               <a class="portfolio__item-img--box">
-                        <img src="/img/portfolio/port-25.jpg" alt="" class="portfolio__item-img">
+               <picture>
+                  <source class="portfolio__item-img" srcset="/img/portfolio/port-25.avif" type="image/avif">
+                  <img class="portfolio__item-img" src="/img/portfolio/port-25-mini.jpg" alt="Описание изображения">
+                </picture>
                        </a>
                      </div>
                   </li>
@@ -701,8 +781,10 @@
                         <a href="#" class="portfolio__item-link">Смотреть кейс</a>
                        </div>
               <a class="portfolio__item-img--box">
-                        <img src="/img/portfolio/port-26.jpg" alt="" class="portfolio__item-img">
-                       </a>
+               <picture>
+                  <source class="portfolio__item-img" srcset="/img/portfolio/port-26.avif" type="image/avif">
+                  <img class="portfolio__item-img" src="/img/portfolio/port-26-mini.jpg" alt="Описание изображения">
+                </picture>                       </a>
                      </div>
                   </li>
                   <li class="portfolio__list-item portfolio__item-gray">
@@ -720,8 +802,10 @@
                         <a href="#" class="portfolio__item-link">Смотреть кейс</a>
                        </div>
               <a class="portfolio__item-img--box">
-                        <img src="/img/portfolio/port-27.jpg" alt="" class="portfolio__item-img">
-                       </a>
+               <picture>
+                  <source class="portfolio__item-img" srcset="/img/portfolio/port-27.avif" type="image/avif">
+                  <img class="portfolio__item-img" src="/img/portfolio/port-27-mini.jpg" alt="Описание изображения">
+                </picture>                       </a>
                      </div>
                   </li>
 
@@ -750,8 +834,10 @@
                         <a href="#" class="portfolio__item-link">Смотреть кейс</a>
                        </div>
               <a class="portfolio__item-img--box">
-                        <img src="/img/portfolio/port-28.jpg" alt="" class="portfolio__item-img">
-                       </a>
+               <picture>
+                  <source class="portfolio__item-img" srcset="/img/portfolio/port-28.avif" type="image/avif">
+                  <img class="portfolio__item-img" src="/img/portfolio/port-28-mini.jpg" alt="Описание изображения">
+                </picture>                       </a>
                      </div>
                   </li>
 
@@ -915,7 +1001,7 @@
                         </li>
                         <li class="text__input-item">
                             <div class="text__input-title  text__input-title--bigstar">Мобильный телефон </div>
-                            <input type="tel" class="text-input" name="mobile" placeholder="Мобильный телефон" required>
+                            <input data-tel-input type="tel" class="text-input" name="mobile" placeholder="Мобильный телефон" required>
                         </li>
                         <li class="text__input-item">
                             <div class="text__input-title">Бюджет</div>

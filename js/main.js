@@ -1,17 +1,27 @@
+const burgerContent = document.querySelector('.burger__content')
+const burgerIcon = document.querySelector('.burger')
+const burgerClose = document.querySelector('.burger__close-btn')
+burgerIcon.addEventListener('click', activateBurger);
+burgerClose.addEventListener('click', activateBurger);
 
-// /* Phone Mask */
-// mask('[data-tel-input]');
+function activateBurger(){
+  burgerContent.classList.toggle("burger__content--active")
+}
 
-// // Удаляем '+' если больше ничего не введено, чтобы показать placeholder
-// const phoneInputs = document.querySelectorAll('[data-tel-input]');
-// phoneInputs.forEach((input)=>{
-// 	input.addEventListener('input', ()=>{
-// 		if (input.value == '+') input.value = '';
-// 	})
-// 	input.addEventListener('blur', ()=>{
-// 		if (input.value == '+') input.value = '';
-// 	})
-// });
+
+/* Phone Mask */
+mask('[data-tel-input]');
+
+// Удаляем '+' если больше ничего не введено, чтобы показать placeholder
+const phoneInputs = document.querySelectorAll('[data-tel-input]');
+phoneInputs.forEach((input)=>{
+	input.addEventListener('input', ()=>{
+		if (input.value == '+') input.value = '';
+	})
+	input.addEventListener('blur', ()=>{
+		if (input.value == '+') input.value = '';
+	})
+});
 
 let swiper = new Swiper(".trust__comm-first", {
 	navigation: {
