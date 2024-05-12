@@ -315,9 +315,9 @@ a:hover {
   right: 0;
   width: 100%;
   height: 100%;
-  background-image: url(/img/header/header-back-mini.jpg);
-  background-image: -webkit-image-set(url("/img/header/header-back.avif") type("image/avif"), url("/img/header/header-back-mini.webp") type("image/webp"));
-  background-image: image-set(url("/img/header/header-back.avif") type("image/avif"), url("/img/header/header-back-mini.webp") type("image/webp"));
+  background-image: url(../img/header/header-back-mini.jpg);
+  background-image: -webkit-image-set(url("../img/header/header-back.avif") type("image/avif"), url("../img/header/header-back-mini.webp") type("image/webp"));
+  background-image: image-set(url("../img/header/header-back.avif") type("image/avif"), url("../img/header/header-back-mini.webp") type("image/webp"));
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -888,7 +888,7 @@ a:hover {
 }
 .projects__title::before {
   position: absolute;
-  content: url(/img/projects/Linden.svg);
+  content: url(../img/projects/Linden.svg);
   width: 230px;
   height: 220px;
   left: -10%;
@@ -903,7 +903,7 @@ a:hover {
 }
 .project__title-link::before {
   position: absolute;
-  content: url(/img/projects/arrow-project.svg);
+  content: url(../img/projects/arrow-project.svg);
   aspect-ratio: 1/1;
   width: 12px;
   right: -20%;
@@ -1220,7 +1220,7 @@ a:hover {
   position: absolute;
   width: 100vw;
   height: 55%;
-  background-image: url(/img/trust/trust-bg.svg);
+  background-image: url(../img/trust/trust-bg.svg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1344,7 +1344,7 @@ a:hover {
   content: "";
   width: 56px;
   height: 56px;
-  background-image: url(/img/trust/arrow-next.svg);
+  background-image: url(../img/trust/arrow-next.svg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1356,7 +1356,7 @@ a:hover {
   content: "";
   width: 56px;
   height: 56px;
-  background-image: url(/img/trust/arrow-prev.svg);
+  background-image: url(../img/trust/arrow-prev.svg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1388,13 +1388,13 @@ a:hover {
 
 .trust__slider .slick-next {
   right: -2%;
-  background-image: url(/img/trust/companies-prev.svg);
+  background-image: url(../img/trust/companies-prev.svg);
   transform: rotate(180deg);
 }
 
 .trust__slider .slick-prev {
   left: -2%;
-  background-image: url(/img/trust/companies-prev.svg);
+  background-image: url(../img/trust/companies-prev.svg);
 }
 
 .trust__slide {
@@ -1450,7 +1450,7 @@ a:hover {
   position: absolute;
   top: 1px;
   right: -20px;
-  content: url(/img/trust/accent-arrow.svg);
+  content: url(../img/trust/accent-arrow.svg);
   width: 12px;
   height: 12px;
 }
@@ -1712,7 +1712,7 @@ a:hover {
   position: absolute;
   content: "";
   display: inline-block;
-  background-image: url(/img/application/accent-check.svg);
+  background-image: url(../img/application/accent-check.svg);
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
@@ -1774,7 +1774,7 @@ a:hover {
 
 .text__input-title--star::before {
   position: absolute;
-  content: url(/img/application/input-star.svg);
+  content: url(../img/application/input-star.svg);
   right: -30%;
   top: -10%;
   width: 9px;
@@ -1783,7 +1783,7 @@ a:hover {
 
 .text__input-title--bigstar::before {
   position: absolute;
-  content: url(/img/application/input-star.svg);
+  content: url(../img/application/input-star.svg);
   right: -20%;
   top: -10%;
   width: 9px;
@@ -2070,7 +2070,7 @@ a:hover {
   max-width: 100vw;
   overflow-x: clip;
   display: flex;
-  background-image: url(/img/about-header/balls-decor.svg);
+  background-image: url(../img/about-header/balls-decor.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2910,7 +2910,7 @@ nav {
 }
 .portfolio__item-white--decor::before {
   position: absolute;
-  content: url(/img/portfolio/white-ball-decor.svg);
+  content: url(../img/portfolio/white-ball-decor.svg);
   bottom: -50%;
   left: 0%;
 }
@@ -2924,7 +2924,7 @@ nav {
 }
 .portfolio__item-purple--decor::before {
   position: absolute;
-  content: url(/img/portfolio/purple-basket-decor.svg);
+  content: url(../img/portfolio/purple-basket-decor.svg);
   top: 0;
   right: 2%;
 }
@@ -2990,7 +2990,7 @@ nav {
 .portfolio__item-gradient--decor::before {
   position: absolute;
   opacity: 0.1;
-  content: url(/img/portfolio/gradient-decor.png);
+  content: url(../img/portfolio/gradient-decor.png);
   top: 4%;
   left: 5%;
   z-index: 0;
@@ -3025,7 +3025,7 @@ nav {
 }
 .portfolio__item-black--decor::before {
   position: absolute;
-  content: url(/img/portfolio/bacl-basket-decor.svg);
+  content: url(../img/portfolio/bacl-basket-decor.svg);
   top: 4%;
 }
 .portfolio__item-black .portfolio__item-subtitle {
@@ -3203,7 +3203,7 @@ nav {
 }
 .portfolio__item-white--decor::before {
   position: absolute;
-  content: url(/img/portfolio/white-ball-decor.svg);
+  content: url(../img/portfolio/white-ball-decor.svg);
   bottom: -50%;
   left: 0%;
 }
@@ -3217,7 +3217,7 @@ nav {
 }
 .portfolio__item-purple--decor::before {
   position: absolute;
-  content: url(/img/portfolio/purple-basket-decor.svg);
+  content: url(../img/portfolio/purple-basket-decor.svg);
   top: 0;
   right: 2%;
 }
@@ -3283,7 +3283,7 @@ nav {
 .portfolio__item-gradient--decor::before {
   position: absolute;
   opacity: 0.1;
-  content: url(/img/portfolio/gradient-decor.png);
+  content: url(../img/portfolio/gradient-decor.png);
   top: 4%;
   left: 5%;
   z-index: 0;
@@ -3318,7 +3318,7 @@ nav {
 }
 .portfolio__item-black--decor::before {
   position: absolute;
-  content: url(/img/portfolio/bacl-basket-decor.svg);
+  content: url(../img/portfolio/bacl-basket-decor.svg);
   top: 4%;
 }
 .portfolio__item-black .portfolio__item-subtitle {

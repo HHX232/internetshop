@@ -16,7 +16,7 @@
    position: relative;
    &::before{
       position: absolute;
-      content: url(/img/projects/Linden.svg);
+      content: url(../img/projects/Linden.svg);
       width: 230px;
       height: 220px;
       left: -10%;
@@ -30,7 +30,7 @@
    position: relative;
    &::before{
       position: absolute;
-      content: url(/img/projects/arrow-project.svg);
+      content: url(../img/projects/arrow-project.svg);
       aspect-ratio: 1/1;
       width: 12px;
       right: -20%;

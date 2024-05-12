@@ -89,7 +89,7 @@ z-index: -2;
       position: absolute;
       content: '';
       display: inline-block;
-      background-image: url(/img/application/accent-check.svg);
+      background-image: url(../img/application/accent-check.svg);
       background-size:contain ;
       background-repeat: no-repeat;
       width: 100%;
@@ -153,7 +153,7 @@ z-index: -2;
 
    &::before{
       position: absolute;
-      content: url(/img/application/input-star.svg);
+      content: url(../img/application/input-star.svg);
       right: -30%;
       top: -10%;
       width: 9px;
@@ -163,7 +163,7 @@ z-index: -2;
 .text__input-title--bigstar{
    &::before{
       position: absolute;
-      content: url(/img/application/input-star.svg);
+      content: url(../img/application/input-star.svg);
       right: -20%;
       top: -10%;
       width: 9px;

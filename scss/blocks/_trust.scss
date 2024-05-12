@@ -7,7 +7,7 @@
    position: absolute;
    width: 100vw;
    height: 55%;
-   background-image: url(/img/trust/trust-bg.svg);
+   background-image: url(../img/trust/trust-bg.svg);
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
@@ -118,7 +118,7 @@ margin-bottom: 50px;
    content: "";
    width: 56px;
    height: 56px;
-   background-image: url(/img/trust/arrow-next.svg);
+   background-image: url(../img/trust/arrow-next.svg);
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
@@ -129,7 +129,7 @@ margin-bottom: 50px;
    content: "";
    width: 56px;
    height: 56px;
-   background-image: url(/img/trust/arrow-prev.svg);
+   background-image: url(../img/trust/arrow-prev.svg);
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
@@ -160,12 +160,12 @@ background: rgb(255, 255, 255);
 }
 .trust__slider  .slick-next{
    right: -2%;
-   background-image: url(/img/trust/companies-prev.svg);
+   background-image: url(../img/trust/companies-prev.svg);
    transform: rotate(180deg);
 }
 .trust__slider  .slick-prev{
    left: -2%;
-   background-image: url(/img/trust/companies-prev.svg);
+   background-image: url(../img/trust/companies-prev.svg);
 
 }
 .trust__slide {
@@ -213,7 +213,7 @@ background: rgb(255, 255, 255);
       position: absolute;
       top: 1px;
       right: -20px;
-      content: url(/img/trust/accent-arrow.svg);
+      content: url(../img/trust/accent-arrow.svg);
       width: 12px;
       height: 12px;
 

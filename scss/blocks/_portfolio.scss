@@ -65,7 +65,7 @@
       position: relative;
       &::before{
          position: absolute;
-         content: url(/img/portfolio/white-ball-decor.svg);
+         content: url(../img/portfolio/white-ball-decor.svg);
          bottom: -50%;
          left: 0%;
       }
@@ -79,7 +79,7 @@
       position: relative;
       &::before{
          position: absolute;
-         content: url(/img/portfolio/purple-basket-decor.svg);
+         content: url(../img/portfolio/purple-basket-decor.svg);
          top: 0;
          right: 2%;
       }
@@ -148,7 +148,7 @@
       &::before{
          position: absolute;
          opacity: .1;
-         content: url(/img/portfolio/gradient-decor.png);
+         content: url(../img/portfolio/gradient-decor.png);
          top: 4%;
          left: 5%;
          z-index: 0;
@@ -188,7 +188,7 @@
       position: relative;
       &::before{
          position: absolute;
-         content: url(/img/portfolio/bacl-basket-decor.svg);
+         content: url(../img/portfolio/bacl-basket-decor.svg);
          top: 4%;
       }
    }
