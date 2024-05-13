@@ -309,7 +309,7 @@ background: rgb(255, 255, 255);
 @media(max-width: 600px){
 .trust__title{
    margin-bottom: 30px;
-   font-size: 42px;
+   font-size: 35px;
 }
 .quotes__img-box{
    right: 67%;
@@ -320,8 +320,8 @@ background: rgb(255, 255, 255);
    gap: 15px;
 }
 .trust__logo-img{
-   width: 90%;
-   height: 90%;
+   width: 80%;
+   height: 80%;
    margin-right: 0;
 }
 .trust__comm-logo {
@@ -330,13 +330,13 @@ background: rgb(255, 255, 255);
         justify-content: center;
 }
 .comm__end-title{
-   font-size: 35px;
+   font-size: 29px;
 }
 .trust__comm-slide {
 gap: 22px;
 }
 .comm__end-text{
-   font-size: 18px;
+   font-size: 16px;
 }
 .quotes__img{
    width: 35px;
@@ -345,6 +345,10 @@ gap: 22px;
 
 .trust__slide-img:nth-child(-n+6){
    display: none;
+}
+.swiper-button-next, .swiper-button-prev{
+   width: 44px;
+   height: 44px;
 }
 }
 @media(max-width: 560px){

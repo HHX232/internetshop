@@ -103,10 +103,14 @@ function isElementInViewport(el, offset) {
 	console.log('Animation started');
  }
 
- // Вызываем функцию при загрузке страницы и при прокрутке
- window.addEventListener('scroll', animateIfVisible);
- animateIfVisible();
-
+ window.onload = function() {
+  if (window.innerWidth < 900 || window.innerHeight < 900) {
+      animateNumber(); // Если ширина меньше 750px, начать анимацию сразу
+  } else {
+      window.addEventListener('scroll', animateIfVisible);
+      animateIfVisible(); // Запускаем проверку при загрузке, чтобы анимация сработала, если элемент уже виден
+  }
+};
  //form
 
 

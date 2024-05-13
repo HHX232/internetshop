@@ -45,8 +45,8 @@
       font-weight: 600;
    }
 }
-.tabs {
-   
+.projects__inner{
+   margin-top: 250px;
 }
 .tabs__btns {
    display: flex;
@@ -340,5 +340,16 @@ grid-row-end: 11;
    }
    .tabs__img-middle--6, .tabs__img-middle--7{
       height: 100%;
+   }
+}
+@media(max-width: 600px){
+   .tabs__content-item{
+      grid-template-rows: repeat(13, 1fr);
+      grid-template-columns: repeat(4, 1fr);
+   }
+}
+@media(max-width: 500px){
+   .tabs__item-img{
+      margin-bottom: 10px;
    }
 }
