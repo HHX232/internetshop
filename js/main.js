@@ -14,6 +14,13 @@ $(document).ready(function(){
 	}
 });
 
+let swiper = new Swiper(".trust__comm-first", {
+	navigation: {
+	  nextEl: ".swiper-button-next",
+	  prevEl: ".swiper-button-prev",
+	},
+ });
+
 
 const burgerContent = document.querySelector('.burger__content')
 const burgerIcon = document.querySelector('.burger')
@@ -24,6 +31,7 @@ burgerClose.addEventListener('click', activateBurger);
 function activateBurger(){
   burgerContent.classList.toggle("burger__content--active")
 }
+
 
 
 /* Phone Mask */
@@ -40,15 +48,9 @@ phoneInputs.forEach((input)=>{
 	})
 });
 
-let swiper = new Swiper(".trust__comm-first", {
-	navigation: {
-	  nextEl: ".swiper-button-next",
-	  prevEl: ".swiper-button-prev",
-	},
- });
 
 
-
+//animation 
 const timerElement = document.getElementById('timer');
 const endValue = 1.83;
 
@@ -112,6 +114,10 @@ function isElementInViewport(el, offset) {
   }
 };
 
+
+
+
+
 //fq
 
 const fqVueBtn = document.querySelector('.fq__vue-btn')
@@ -139,6 +145,9 @@ fqVueBtn.addEventListener('click', function(){
   }
   
 })
+
+
+
  //form
 
 
@@ -162,6 +171,8 @@ fqVueBtn.addEventListener('click', function(){
   };
   xhr.send(formData);
 });
+
+
 
 
 
