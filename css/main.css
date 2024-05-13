@@ -644,7 +644,7 @@ a:hover {
   overflow: visible;
   margin-left: 70px;
   width: 500px;
-  height: 850px;
+  height: 700px;
 }
 
 .quick__images-item--1, .quick__images-item--2, .quick__images-item--3 {
@@ -818,6 +818,7 @@ a:hover {
   }
   .quick__white-text {
     order: 0;
+    margin-bottom: 40px !important;
   }
   .quick__images-item {
     top: -20%;
