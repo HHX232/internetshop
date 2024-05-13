@@ -15,6 +15,7 @@ $(document).ready(function(){
 });
 
 let swiper = new Swiper(".trust__comm-first", {
+   loop: true,
 	navigation: {
 	  nextEl: ".swiper-button-next",
 	  prevEl: ".swiper-button-prev",
