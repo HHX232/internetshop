@@ -599,6 +599,7 @@ a:hover {
 .quick__inner-white {
   display: flex;
   height: 50vh;
+  padding-bottom: 70px;
 }
 .quick__inner-white .container {
   display: flex;
@@ -644,7 +645,7 @@ a:hover {
   overflow: visible;
   margin-left: 70px;
   width: 500px;
-  height: 700px;
+  height: 750px;
 }
 
 .quick__images-item--1, .quick__images-item--2, .quick__images-item--3 {
