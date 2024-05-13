@@ -111,6 +111,34 @@ function isElementInViewport(el, offset) {
       animateIfVisible(); // Запускаем проверку при загрузке, чтобы анимация сработала, если элемент уже виден
   }
 };
+
+//fq
+
+const fqVueBtn = document.querySelector('.fq__vue-btn')
+console.log(fqVueBtn)
+const fqLinks = document.querySelectorAll('.fq__card-link')
+
+document.addEventListener("DOMContentLoaded", function() {
+  if (fqLinks.length < 4) {
+    fqVueBtn.classList.add("none"); 
+  }
+});
+
+fqVueBtn.addEventListener('click', function(){
+  if(fqLinks[fqLinks.length - 1].classList.contains("none")){
+    for(i=0; i< fqLinks.length; i++){
+      fqLinks[i].classList.remove("none")
+    }
+    fqVueBtn.innerText = "Скрыть"
+  }else{
+    for(i=3; i< fqLinks.length; i++){
+      fqLinks[i].classList.add("none")
+    }
+    fqVueBtn.innerText = "Показать еще"
+
+  }
+  
+})
  //form
 
 
