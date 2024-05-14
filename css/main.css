@@ -941,6 +941,11 @@ a:hover {
     margin-top: 570px !important;
   }
 }
+@media screen and (max-width: 1400px) and (max-height: 400px) {
+  .projects__inner {
+    margin-top: 640px !important;
+  }
+}
 @media screen and (max-width: 1020px) and (min-height: 1300px) {
   .projects__inner {
     margin-top: 800px !important;
@@ -996,6 +1001,11 @@ a:hover {
     margin-top: 600px !important;
   }
 }
+@media screen and (max-width: 1200px) and (max-height: 4000px) {
+  .projects__inner {
+    margin-top: 730px !important;
+  }
+}
 @media screen and (max-width: 1130px) and (max-height: 520px) {
   .projects__inner {
     margin-top: 690px !important;
@@ -1016,6 +1026,11 @@ a:hover {
     margin-top: 1350px !important;
   }
 }
+@media screen and (max-width: 1050px) and (max-height: 430px) {
+  .projects__inner {
+    margin-top: 1450px !important;
+  }
+}
 @media screen and (max-width: 1050px) and (min-width: 1020px) {
   .projects__inner {
     margin-top: 700px !important;
@@ -1024,9 +1039,17 @@ a:hover {
     height: 50vh;
   }
 }
+@media screen and (width: 1020px) {
+  .projects__inner {
+    margin-top: 1200px !important;
+  }
+  .quick__inner-white {
+    height: 50vh;
+  }
+}
 @media screen and (max-width: 950px) and (max-height: 820px) {
   .projects__inner {
-    margin-top: 1150px !important;
+    margin-top: 1250px !important;
   }
 }
 @media screen and (max-width: 950px) and (max-height: 750px) {
@@ -1037,6 +1060,11 @@ a:hover {
 @media screen and (max-width: 950px) and (max-height: 600px) {
   .projects__inner {
     margin-top: 1350px !important;
+  }
+}
+@media screen and (max-width: 950px) and (max-height: 430px) {
+  .projects__inner {
+    margin-top: 1450px !important;
   }
 }
 @media (max-width: 760px) {
